@@ -6,12 +6,14 @@ import { Meal } from '../meal';
   templateUrl: './add-meal.component.html',
   styleUrls: ['./add-meal.component.css']
 })
-export class AddMealComponent implements OnInit {
 
+export class AddMealComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
   }
+
+
   @Output() newMealSender = new EventEmitter();
   AddClicked(MealName: string, MealDesc: string, MealCalories: number){
     if(MealName.length>1){
@@ -19,6 +21,10 @@ export class AddMealComponent implements OnInit {
       this.newMealSender.emit(newMealToAdd);
     }else{
       alert("INVALID INPUT!!");
+
+ 
+
+  
     }
 
   }
