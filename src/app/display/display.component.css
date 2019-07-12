@@ -1,13 +1,16 @@
 h1{
-  color: green;
+  color:blue;
 }
 h2{
   color: blue;
 }
 h3{
-  color: Red;
+  color:black;
 }
 hr{
   margin-top: 0;
   margin-bottom: 0;
+}
+.one {
+  color: black
 }
